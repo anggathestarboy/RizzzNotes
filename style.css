@@ -62,3 +62,60 @@ header h1 a{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h1 a {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .kirim {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .kirim form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .kirim form input,
+    .kirim form button {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1[style] {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
